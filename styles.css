@@ -128,7 +128,7 @@ body {
   .about {
     padding: 40px 20px;
     text-align: center;
-    background-image: url('/images//DJI_0276.jpg'); /* Adjust filename */
+    background-image: url('images/DJI_0233-min.jpg'); /* Adjust filename */
     background-size: cover; /* Fills section */
     background-position: center; /* Centers image */
     background-attachment: fixed; /* Parallax effect */
