@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drone Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Sticky Navigation (Project 3, modified in Project 14 for mobile) -->
+  <nav class="sticky-nav">
+    <img src="/images/DJI_0286-min.jpg" alt="Drone Logo">
+    <button class="hamburger">☰</button>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with Video and Button (Project 2, button added in Project 15) -->
+  <div class="hero">
+    <video autoplay loop muted playsinline class="background-video">
+      <source src="videos/drone-video.mp4" type="video/mp4">
+      Your browser doesn’t support video.
+    </video>
+    <header>
+      <h1>Drone and Video Services</h1>
+      <button class="hero-btn">Learn More</button>
+    </header>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section (Project 4, parallax added in Project 16) -->
+    <section class="about">
+      <h2>About Us</h2>
+      <p>We specialize in capturing stunning aerial photography and videography with drones, bringing unique perspectives to life.</p>
+    </section>
+
+    <!-- Services Section (Project 5, images added in Project 6) -->
+    <section class="services">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="/images/DJI_0328-min.jpg" alt="Drone Photography">
+          <h3>Drone Photography</h3>
+          <p>High-quality aerial photos for events, real estate, and more.</p>
+        </div>
+        <div class="service-card">
+          <img src="/images/DJI_0315-min.jpg" alt="Drone Videography">
+          <h3>Drone Videography</h3>
+          <p>Cinematic aerial videos to showcase your story from above.</p>
+        </div>
+        <div class="service-card">
+          <img src="/images/DJI_0300-min.jpg" alt="Aerial Mapping">
+          <h3>Aerial Mapping</h3>
+          <p>Precise drone mapping for surveys and planning.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section with Carousel (Project 17) -->
+    <section class="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="carousel">
+        <div class="carousel-slide active">
+          <p>"Amazing aerial shots that captured our event perfectly!"</p>
+          <span>- Jane Doe</span>
+        </div>
+        <div class="carousel-slide">
+          <p>"The drone video added a cinematic touch to our project."</p>
+          <span>- John Smith</span>
+        </div>
+        <div class="carousel-slide">
+          <p>"Top-notch mapping services for our construction site."</p>
+          <span>- Alex Brown</span>
+        </div>
+        <button class="carousel-prev">←</button>
+        <button class="carousel-next">→</button>
+      </div>
+    </section>
+
+    <!-- Photo Gallery Section (Project 10, lightbox added in Project 11) -->
+    <section class="gallery">
+      <h2>Photo Gallery</h2>
+      <div class="gallery-grid">
+        <img src="/images/DJI_0173-min.jpg" alt="Gallery Photo 1" class="gallery-img">
+        <img src="/images/DJI_0176-min.jpg" alt="Gallery Photo 2" class="gallery-img">
+        <img src="/images/DJI_0182-min.jpg" alt="Gallery Photo 3" class="gallery-img">
+        <img src="/images/DJI_0242-min.jpg" alt="Gallery Photo 4" class="gallery-img">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with Contact Form (Project 8, form added in Project 12) -->
+  <footer>
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </footer>
+
+  <!-- Back to Top Button (Project 9) -->
+  <button id="back-to-top">↑ Top</button>
+
+  <!-- Lightbox (Project 11) -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-btn">×</span>
+    <img id="lightbox-img" alt="Lightbox Image">
+  </div>
+
+  <!-- JavaScript (Updated through Projects 9, 11, 13, 14, 17) -->
+  <script src="script.js"></script>
+</body>
+</html>
